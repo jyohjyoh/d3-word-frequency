@@ -1,0 +1,23 @@
+Keyshot plugin from General Fusion 360 Questi
+Hi, 
+
+ 
+
+Sorry if this is a duplicate post - I thought I just asked this question but can't seem to find it so I guess it didn't get posted.
+
+ 
+
+I downloaded and installed the Keyshot trial, but I can't find anything Keyshot-related in F360 or vice versa. Their website shows a video with an old version of F360 so the magic menu that they use to make it work isn't there anymore. 
+
+ 
+
+Has anyone tried this recently? All the Keyshot posts seem to be from a while ago.. does it still work?
+
+ 
+
+Thanks for any info, Rob
+
+ 
+
+
+

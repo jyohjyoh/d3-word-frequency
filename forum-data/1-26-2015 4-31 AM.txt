@@ -1,0 +1,9 @@
+Every time Fusion updates, my taskbar icon br
+Hi there,
+
+ 
+
+on Windows 7 every time Fusion updates the icon on the left side of the taskbar continues to launch the old version of the application. This results in my having to find the new application and drag it to the taskbar before launching.
+
+
+

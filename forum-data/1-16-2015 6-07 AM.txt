@@ -1,0 +1,17 @@
+January Update and what happened
+As we went live with the Jan update we quickly found out that we had an incorrect config file for the MAC.  So we pulled the update to fix it.  We have a fix for it and working out when to release the update.  Will provide an update shortly.
+
+ 
+
+Sorry for the convenience.
+
+ 
+
+Prabakar.
+
+ 
+
+ 
+
+
+

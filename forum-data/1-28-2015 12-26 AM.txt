@@ -1,0 +1,6 @@
+Loft Command Constrained to splines
+If i loft between 2 splines, can i modified the splines and automaticly modified the lofted surface?, thank you
+
+
+
+via Sketching, Sculpting, Modeling, and Assemblies topics http://ift.tt/1z9QlIh

@@ -1,0 +1,13 @@
+timeline items disappear
+A large number of my timeline items have simply vanished.  The objects still exist in the browser.  "Show in timeline" does nothing, as far as I can see. Where could they have gone? 
+
+ 
+
+Thanks!
+
+ 
+
+-jamie
+
+
+

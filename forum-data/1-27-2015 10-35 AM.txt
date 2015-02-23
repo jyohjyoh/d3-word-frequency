@@ -1,0 +1,13 @@
+Toolbar issues again in OS X
+Hello:
+
+. . . I am seeing toolbar issues again in OS X (10.10.1 on a iMac, Fusion version 2.0.1407).
+
+  Screencast wasn't showing it well, but I was able to get a QT recording of a reliable method to "break" the toolbars -- which works every time for me here.
+
+  (To "reset", simply go fullscreen and drag the toolbars back to their normal positions.)
+
+Cheers, C
+
+
+

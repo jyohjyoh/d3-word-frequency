@@ -1,0 +1,7 @@
+Installing Fusion360 on a USB stick
+Just curious if this is even possible. My workstation at my day job does not permit installation of software, but it does permmit inserting a USB thumb drive for transfer of files and whatnot. I was thinking it would be really handy to have Fusion running while I was on my lunchbreak or whatnot and maybe getting some practice in.
+
+I know some programs (video games mostly) can be run off a stick, albeit at reduced performance
+
+
+

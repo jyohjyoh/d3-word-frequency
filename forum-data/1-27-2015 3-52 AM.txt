@@ -1,0 +1,19 @@
+June Fusion 360 update fails
+Hi All
+
+I am having a problem with the latest update of fusion 360.
+
+Open as normal, update will be installed and will ask for restart. OK
+
+Download gets to around about 20% then fails.
+
+ 
+
+Notification to check log file, dont know where this is, and probably not much use to this thicky :-)
+
+ 
+
+Can anyone help please
+
+
+

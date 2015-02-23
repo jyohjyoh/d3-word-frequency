@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forum Feedbak Pattern</title>
+
+<style>
+	body {
+		font-family: Helvetica, sans-serif;
+		font-size: 12px;
+
+	}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+</head>
+
+<body>
+<p id="demo">eee</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<svg class="nested" width="720" height="120" background-color="#333">
+</svg>
+
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+var date = ["4/2/15", "4/2/15"];
+
+
+date[0] = d3.time.format("%m/%d/%y").parse(date[0]);
+date[1] = d3.time.format("%m/%d/%y").parse(date[1]);
+
+date2 = d3.min(date)
+
+var date3 = new Date(2012, 1, 2);
+
+var str1 = "abc test hello test abc";
+var str2 = "test";
+var replace = "<span style='background-color:yellow'>nonono</span>";
+
+var str3 = str1.split(str2).join(replace);
+
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = str3;
+}
+
+var matrix =[{name:"hello", stuff:[10, 20, 50]},{name:"pop", stuff:[18, 30, 40]}, {name:"yoyo", stuff:[10,30,40]}, {name:"lolo", stuff:[10,30,40]}];
+var matrix1=[10, 40, 20];
+
+var lateral=10;
+var vertical=10;
+
+var svg = d3.select(".nested");
+/*var circle = svg.selectAll("circle")
+    		.data(matrix1)
+    		.enter()
+    			.append("circle")
+    				.attr("cx", "20")
+    				.attr("cy", function(d){return d})
+    				.attr("r", "5")
+    				.style("fill", "#f00");
+    				*/
+var circle = svg.selectAll("g")
+    		.data(matrix)
+    		.enter()
+    		.append("g")
+    		.attr("transform", function(d){lateral+=40; return "translate("+ lateral+",0)";})
+    			.selectAll("circle")
+    				.data(function(d){return d.stuff;})
+    				.enter()
+    				.append("circle")
+    				.attr("cx", "20")
+    				.attr("cy", function(d){return d;})
+    				.attr("r", "5")
+    				.style("fill", "#f00");
+
+$.get('./forum-data/1-12-2015 6-23 PM.txt', function(data) {
+    alert(data);
+});
+
+$("button").text("yo");
+</script>
+
+</html>

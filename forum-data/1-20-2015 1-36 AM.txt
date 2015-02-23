@@ -1,0 +1,35 @@
+Weird problem or... Model space freezes  goes
+Hi Guys,
+
+To make things clear, I am a total newbie to Fusion360, on day 2... have used AutoCad a fair bit...
+
+ 
+
+Something has me stumped and hope you can help. Just worked on some real simple model, and similar things happened last nigth going through a tutorial.
+
+All of a sudden the model space almost freezes, becomes super sluggish and is not doing what I ask it to.
+
+I can still see the program highlight the hand for paning, if I hold the middel button down, same is I do shift and middle button, it highlights the free orbit. Sometimes when i hit the "fit" it will fit it and also the "home" and cube funtion doesn't work...
+
+ 
+
+I am working offline.
+
+ 
+
+If I click on the "file management" drop-down it shows it like it is alive... But if I select "preferences" or "graphic diag" nothing happens.
+
+ 
+
+As I click the [x] to close the project it allows me to, then all of a sudden pops-up the "preerences page" and "graphic diag" to... In the new project that opens by default, the model space still behaves as bad... and when I selected the "graphic diag" I again had to close the project before it would pop up...
+
+As I clicked the [X] to close the program, it through a message about reporting the issue and it gace me report # CER_107358677
+
+CPU usage is about 10%, RAM 27% out of 16GB, GPU Device ATI Radeon HD 4300/4500 Series, 512MB RAM and DirectX 11.0 graphics driver... Win-7 64 bit machine
+
+ 
+
+Thanks in advance Anders
+
+
+

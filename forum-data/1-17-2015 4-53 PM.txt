@@ -1,0 +1,23 @@
+Reliable failure on creating a drawing in OS 
+Hello:
+
+. . . I am seeing a reliable sticking/crash when I try to create a drawing from a part. (OS X 10.10.1 on a 27in iMac, Fusion version 2.0.1403)
+
+ 
+
+Watch the screen cast:  http://ift.tt/1Bkd1ZG
+
+ 
+
+  A few things happen after trying to place the view: that awful pixel preview persists, I lose the mouse pointer over the drawing "sheet". . .
+
+  After some time I can try another command from the ribbon (doesn't matter which), and then we see the dreaded beach-ball-of-despair. I can wait for quite some time, but eventually have to force-quit the app.
+
+  This happens every time I try this, no matter the file, no matter the view.
+
+Cheers, C
+
+ 
+
+
+

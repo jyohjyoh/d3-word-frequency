@@ -1,0 +1,13 @@
+Problems with January Update
+As expected based on what I have read regarding the January update I have encountered an issue.  One would think if a central feature of your product is rolling out frequent updates that process would be robust as it interferes with your customer base on a regular basis.  When this process results in a bad experience the customer base will not be happy.  Work on this.  Its not fancy, its not trendy, its something that when working well no one will ever notice or give kudos BUT it is none the less essential.
+
+ 
+
+Here is a screen shot of the message from Fusion.  No idea what it means or what I am supposed to do.  I have clicked Exit and Fusion aborts the launch attempt.  I have clicked continue and Fusion will not recognize my log in credentials.  Help.
+
+ 
+
+￼ 
+
+
+

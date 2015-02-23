@@ -1,0 +1,23 @@
+File won't open
+Hi guys,
+
+ 
+
+I was up all night yesterday working on a design (File name: Sida rev 2) and when I try to open it today my software says "Sida rev 2 in unavailable". There is in fact THREE files called "Sida rev 2" in the data panel now for some reason, all of them without a thumbnail picture, and none of the will open.
+
+And when I try to access the files in A360 it says "Error: There is no such entity".
+
+ 
+
+So, any suggestions on how I can recover my work from last night?
+
+ 
+
+I'm running Fusion 360 on iOS Yosemite by the way, and my Diagnostics log is attached.
+
+ 
+
+Thanks in advance!
+
+
+

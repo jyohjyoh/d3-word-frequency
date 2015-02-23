@@ -1,0 +1,25 @@
+Multiple snapshots
+Hey all,
+
+ 
+
+I came from SolidEdge, and it has a feature where you can arrange, joint, orient, show/hide your components and then take a snapshot. So lets say you're doing a jewelry box, you can have an exploded view, one with the lid on, one with the lid off, one with a section view. You can then go through and change between them so you can get quick renders and off to marketing or your customer or whatever.
+
+ 
+
+Is there any way to do this in Fusion without doing a save as multiple times?
+
+ 
+
+I ran into this today because I had drawn my part with some extra stuff for rendering and then decided to start doing CAM work. Well, since it was multiple parts cut out of a single piece of stock I had to reorient the entire assembly as a flat for machining. This meant breaking all my joints, and orientation for rendering. I ended up making two files because I still wanted to go back and render more later if I needed to.
+
+ 
+
+Little did I know that I was going to have design changes, and as a result my rendering file is not up to date with my CAM model. So now I have to go back and redo my rendering file so I can get up-to-date renders.
+
+ 
+
+Is there a better way to do this?
+
+
+

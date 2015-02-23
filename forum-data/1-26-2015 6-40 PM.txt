@@ -1,0 +1,18 @@
+Object to cut feature, how does it work
+Hi,
+
+ 
+
+So from the January update, I saw that there's now this object to cut feature which should prevent other components to be affected by the cut feature, however till today, I can't seem to get it to work. I attached a screenshot to show how I usually do things, but can't seem to "activate" the cut to only affect the main component and not others.
+
+ 
+
+  http://ift.tt/1JwLpC6
+
+ 
+
+Thanks
+
+
+
+via Sketching, Sculpting, Modeling, and Assemblies topics http://ift.tt/1C9CPbi

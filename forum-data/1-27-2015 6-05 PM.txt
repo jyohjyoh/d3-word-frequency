@@ -1,0 +1,17 @@
+Generate Low Poly Look
+I want to create a model in a distinct low polygon look. See for example:
+
+http://ift.tt/18rWw1T
+
+ 
+
+Any advice on how to get that type of look in Fusion? Since the shape is very simple (a heart), it would be sufficient to find a way to reduce the number of faces of a model. I guess I'd have to use the sculpt workspace for this, correct?
+
+ 
+
+Thanks!
+
+Michael
+
+
+

@@ -1,0 +1,9 @@
+Measurements in New Drawing from File - Imper
+Hi everyone, I'm experiencing difficulties with displaying metric measurements on the drawing even though the settings are all set to metric. 
+
+ 
+
+Any ideas??? 
+
+
+

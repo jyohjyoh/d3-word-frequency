@@ -1,0 +1,9 @@
+Fusion 360 for Snow Leopard
+I realize that there is a old thread on a similar subject, but there were no clear answers given. That said, is there any way to get Fusion 360 on my 2007 MacBook Pro running 10.6 Snow Leopard? If not, is there any other Autodesk software that will work with my system?
+
+Thanks,
+
+Josiah
+
+
+

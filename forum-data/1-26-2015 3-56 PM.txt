@@ -1,0 +1,38 @@
+tsplines can I crease at a vertex
+I can't seem to crease at a vertex. I have a flat plane that I'm trying to get to shape before I extrude it.
+
+ 
+
+You can see a few places that are already creased, and two areas I would like to crease.
+
+ 
+
+￼ 
+
+ 
+
+ 
+
+But when I use the crease tool, it creases both ends of an edge
+
+ 
+
+￼ 
+
+ 
+
+Any ideas?
+
+ 
+
+ 
+
+Is this the only solution, to add an edge and then crease?
+
+ 
+
+￼ 
+
+
+
+via Sketching, Sculpting, Modeling, and Assemblies topics http://ift.tt/1Bh5RjZ

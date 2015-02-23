@@ -1,0 +1,9 @@
+January update is now live
+The January update is now live. To pick up this update please close the application and restart. Some may encounter an issue where the application does not restart automatically after the live update. Once you start it manually you should be good and on Build 2.0.1403. This update is for both Windows and Mac but NOT our Mac App Store users. We will get the Mac App Store users to the current build in the next few days.  
+
+ 
+
+Thanks for your patience while we sorted out the issues from yesterday’s deployment.
+
+
+

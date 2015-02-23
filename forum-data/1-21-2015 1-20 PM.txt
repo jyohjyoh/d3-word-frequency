@@ -1,0 +1,19 @@
+Space Mouse and multiple view ports
+Work is a Win7 64b PC w/ wirelss space mouse and home is iMac Retina w/ Spacepilot Pro. On either system, when I open a design in the graphics window all is well - joystick works and buttons work (except for radial menus on wireless spacemouse). If I then switch to multiple viewports, the 3D mice continue to operate and follow the focus to each window. However, when I switch back to a single view, the 3D mice stop working completely. Oddly enough, if I go back to multiple view, the 3d mice are working again.
+
+ 
+
+The only remedy to get them working in a single viewport again is to quit the program and restart.
+
+ 
+
+Was wondering if anyone using these sorts of input devices can confirm this behavior? TIA for any info.
+
+ 
+
+Fred
+
+ 
+
+
+

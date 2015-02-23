@@ -1,0 +1,9 @@
+What's your Fusion 360 performance like
+Hello,
+
+ 
+
+My name is Mike Prom and I am a product manager on the Fusion 360 team.  We are looking for feedback on what is slow performance.  Specifically we would like to know what operations you are doing when you feel that Fusion is performing slow.  For example editing a feature, selecting a component for a joint, rotating the model…  We are aware of the time it can take to open or save in certain situations and work is being done to improve this.  If you can provide an archive model .f3d and give us the steps to repeat the process in which you notice the performance change it would be greatly appreciated.  Thank you for your continued engagement with the team.
+
+
+

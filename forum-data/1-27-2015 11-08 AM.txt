@@ -1,0 +1,13 @@
+unable to set up Fusion 360 for your autodesk
+Hi,
+
+i downloaded Fusion 360 by downloading and runing the "Fuision 360 Client-exe" file. It worked untill at the end there came this note: "unable to set up Fusion 360 for your autodesk account"
+
+What advice do you have for me?
+
+ 
+
+Thanks
+
+
+

@@ -1,0 +1,51 @@
+Undo behaviour in sketches still broken
+I think it would just again not get awareness if i  just comment on the idea so i'll post it here this time.
+
+ The undo behaviour in sketches is broken like forever now.
+
+ 
+
+Here's my idea station post from July 2014:  http://ift.tt/1CecKqf - the idea is "under review" since then.
+
+ 
+
+The behaviour still exists in the actual version. In this case:
+
+ 
+
+- using the project tool
+
+- pressing cmd+z (undo) once disables the tool
+
+- pressing cmd+z the second time does the actual undo
+
+- the tool is gone.
+
+ 
+
+expected behaviour:
+
+ 
+
+- using the project tool
+
+- pressing cmd+z does the actual undo
+
+- continue using the project tool
+
+ 
+
+The additional comment on this topic i added later is also still valid.
+
+ 
+
+Thanks for consideration!
+
+ Frank
+
+ 
+
+ 
+
+
+

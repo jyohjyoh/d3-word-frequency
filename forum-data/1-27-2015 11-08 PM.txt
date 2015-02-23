@@ -1,0 +1,11 @@
+Fusion crashed on save, lost work is on A360-
+I had Fusion freeze in the midst of a user save.  CER_107724065
+
+I was not able to manually export the file locally, though I tried.  When I re-opened Fusion I got the message asking if I wanted to open a locally saved version to recover. I said yes- and what opened was a version from hours before, missing all my recent work. I viewed the file on A360 and I see that the cached version, which I closed, has now become the most recent, but the manual save was apparently successful and my work exists in the previous version. I can see it as a rendering. I want to open the previous version and get rid of what Fusion see as the most recent. 
+
+ 
+
+What is not obvious to me is how one now goes about promoting a “older” version or opening it. When I look at it and ask to open, I get the most recent cached version. Maybe I’m slow, but the interface for doing this is not clear to me at all. Help references I find are referencing the old dashboard, where this was fairly obvious. How do I do it now? 
+
+
+

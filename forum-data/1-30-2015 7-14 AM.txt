@@ -1,0 +1,43 @@
+Crashed on update so I uninstalled and now I 
+OSX 10.9.5
+
+I was getting the messgae to updat or quit so I uopdated and when the update got done loading it said Fsuin will restart, however it never did restart and I got this message  ￼ 
+
+ 
+
+I tried multiple times with the same result. 
+
+ 
+
+I then deicided to unistall using the following instructions. 
+
+ 
+
+MAC
+
+  Uninstalling
+
+      1. Move the Autodesk Fusion 360 and/or Autodesk Sim 360 dock icons to the trash.
+
+ 
+
+  Clearing your cache files
+
+      2. Start a new Finder window.       3. In the Finder Menu (Apple bar on top), select Go > Go to Folder       4. Enter ~/Library in the dialog that comes up       5. Browse to Application Support/Autodesk/and move the following folders to the trash:
+
+          - Webdeploy           - Web Services           - Autodesk Fusion 360           - MC3           - Synergy           - NINVFUS (if present)           - Neutron Platform           - Common           - Autodesk Sim 360 (if present)           - NSIM (if present)
+
+      6. Next navigate to $TMPDIR/Autodesk (open a Terminal window, and
+
+          typepen $TMPDIR/Autodesk) and move the following folders to the trash:
+
+          - Autodesk Fusion 360 and/or Autodesk Sim 360           - BrowserCache           - Neutron Test Application           - Project Forge (if present)           - Project Simulus (if present)
+
+ 
+
+After downloaiding from the website to reinstall I keep getting this error. Please Help! 
+
+￼ 
+
+
+

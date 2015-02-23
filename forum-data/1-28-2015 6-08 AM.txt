@@ -1,0 +1,23 @@
+Changing the radius of an arc between to fixe
+I'm wanting to change the radius of of an arc between two points, however I want to make those points remain the same distance apart. 
+
+ 
+
+I've tried moving the centrepoint of the arc further away which increseaes the radius but I can't specify the radius I actually want.
+
+ 
+
+If I change the radius by the dimension tool to the radius I want, the arc increases drastically in size and is completely irrelevant. 
+
+ 
+
+ 
+
+Hope someone can help!
+
+ 
+
+Rob
+
+
+

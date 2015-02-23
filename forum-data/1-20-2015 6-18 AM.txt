@@ -1,0 +1,13 @@
+unstable Jan 2015 update
+Latest update is very unstable (Jan 2015). Osx Yosemite, iMac 5K.
+
+Many random crashes in 2d Drawing when saving.
+
+Please debug it well when the computer wakes after a standby mode. Many issues are caused by this state.
+
+ 
+
+Regards
+
+
+

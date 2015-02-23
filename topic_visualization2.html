@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forum Feedbak Pattern</title>
+
+<style>
+	body {
+		font-family: Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	.words-list{
+		background-color: #eee;
+	}
+
+	.chart{
+		background-color: #ddd;
+
+	}
+
+	.axis text {
+		font: 10px;
+		fill: #666;
+	}
+	.axis path {
+		display: none;
+	}
+
+	.y.axis line {
+		fill: none;
+		stroke: #eaeaea;
+		shape-rendering: crispEdges;
+	}
+
+	.x.axis path line{
+		display: none;
+	}
+
+	.feedback-list{
+		margin-top: 20px;
+	}
+
+</style>
+</head>
+
+<body>
+
+<svg class="words-list" height="600" width="100"></svg>
+
+<svg class="chart" height="600" width="800"></svg>
+
+<div class="tooltip"></div>
+
+<div class="feedback-list">Hello</div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+	var margin = {top: 20, right: 30, bottom: 100, left: 30 },
+	    width = 800 - margin.left - margin.right,
+	    height = 600 - margin.top - margin.bottom;
+
+	var svg_words_list = d3.select(".words-list");
+	var svg_chart = d3.select(".chart");
+	var selected_words = new Array();
+
+	// add the tooltip area to the webpage
+	var tooltip = d3.select(".tooltip")
+    				.style("opacity", 0);
+
+    var div_feedback = d3.select(".feedback-list");
+
+	d3.csv("word-file-count2-formatted.csv", function(error, data) {
+		var word_count = new Array();
+		var files_by_date = new Array();
+
+		data.forEach( function(d){
+			//build word_count array
+			var index = -1;
+			for(var i=0; index < 0 && i<word_count.length; i++){
+				if(word_count[i].word == d.word){
+					index = i;
+				}
+			}
+			if(index == -1){
+				word_count.push({word:d.word, count:1});
+			}
+			else{
+				word_count[index].count +=1;
+			}
+
+			//build files_by_date array
+			index = -1;
+			for( var i=0; index<0 && i<files_by_date.length; i++){
+				if(files_by_date[i].date == d.date){
+					index = i;
+				}
+			}
+			if( index == -1){
+				var fname_word = new Array();
+				fname_word.push({fname:d.filename1, words:[d.word]});
+				for( var i=1; i<d.filecount; i++){
+					if(i==1) fname_word.push({fname:d.filename2, words:d.word});
+					if(i==2) fname_word.push({fname:d.filename3, words:d.word});
+					if(i==3) fname_word.push({fname:d.filename4, words:d.word});
+					if(i==4) fname_word.push({fname:d.filename5, words:d.word});
+				}
+				files_by_date.push({date:d.date, filename_word:fname_word })
+			}
+			else{
+				var fname_word = files_by_date[index].filename_word;
+				var pushed = 0;
+				
+				d.filecount = +d.filecount; //convert filecount to number
+
+				for(var i=0; i<d.filecount; i++ ){
+					pushed = 0;
+					for( var j=0; j<fname_word.length; j++){
+						if( i==0){
+							if( fname_word[j].fname == d.filename1 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==1){
+							if( fname_word[j].fname == d.filename2 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==2){
+							if( fname_word[j].fname == d.filename3 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==3){
+							if( fname_word[j].fname == d.filename4 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==4){
+							if( fname_word[j].fname == d.filename5 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+					}
+
+					if(pushed == 0){
+						if( i==0) files_by_date[index].filename_word.push({fname:d.filename1, words:d.word});
+						if( i==1) files_by_date[index].filename_word.push({fname:d.filename2, words:d.word});
+						if( i==2) files_by_date[index].filename_word.push({fname:d.filename3, words:d.word});
+						if( i==3) files_by_date[index].filename_word.push({fname:d.filename4, words:d.word});
+						if( i==4) files_by_date[index].filename_word.push({fname:d.filename5, words:d.word});
+					}
+				}
+			}
+
+
+		});
+
+
+		word_count.sort(function(a,b){ return b.count - a.count});
+		files_by_date.sort(function(a,b){ return b.date - a.date});
+		selected_words.push(word_count[0].word);
+
+		var h0 = 40, h1=40;
+		svg_words_list.selectAll("text")
+					.data(word_count)
+					.enter()
+					.append("text")
+					.attr("x", 20)
+					.attr("y", function(d){h0=h1; h1+=d.count*2+6; return h0;})
+					.attr("font-size", function(d){return d.count*2;})
+					.style("fill", function(d){
+						for( var j=0; j<selected_words.length; j++){
+							if( d.word == selected_words[j]) return "rgb(0, 80, 200)";
+						}
+						return "rgb(0, 0, 0)";
+					})
+					.text(function(d){ return (d.word); })
+					.on("click", function(d){
+						var found = 0;
+						for( var j=0; found==0 && j<selected_words.length; j++){
+							if( d.word == selected_words[j]){
+								selected_words.splice(j, 1);
+								found = 1;
+							}
+						}
+						if(found==0){
+							selected_words.push(d.word);
+						}
+					});
+
+		var w0 = 0;
+		h0 = 40, h1=40;
+
+	
+		var acc=1;
+		svg_chart.selectAll("g")
+					.data(files_by_date)
+					.enter()
+					.append("g")
+					.attr("transform", function(d){acc+=20; return "translate("+acc+", 0)";}) //function(d){ alert(date_format(d.date)); return "translate("+xScale(d.date)+",20)";})
+						.selectAll("circle")
+						.data(function(d, i){return d.filename_word;})
+							.enter()
+							.append("circle")
+							.attr("r", 4)
+							.attr("cx", margin.left)
+							.attr("cy", function(d, i){return height-15*i-30;});/*
+							.style("fill", function(d){ return "rgb(0, "+d.words.length*10+","+d.words.length*10+")";})
+							.style("stroke", function(d, i){
+									for( var j=0; j<selected_words.length; j++){
+										if( d.words.indexOf(selected_words[j])>-1 ) return "rgb(255, 80, 80)";
+									}
+									return "rgb(255, 255, 255)";
+								})
+							.style("stroke-width", function(d, i){
+									var cnt = 0;
+									for( var j=0; j<selected_words.length; j++){
+										if( d.words.indexOf(selected_words[j])>-1 )cnt++;
+									}
+									return cnt*4;
+								});
+							.on("mouseover", function(d){
+								tooltip.transition()
+									.duration(200)
+									.style("opacity", .9);
+								tooltip.html(d.fname + "<br/> (" + d.words + ")")
+									.style("left", (d3.event.pageX + 5) + "px")
+									.style("top", (d3.event.pageY - 28) + "px");
+							})
+							.on("mouseout", function(d) {
+								tooltip.transition()
+									.duration(500)
+									.style("opacity", 0);
+							});
+*/
+		
+		div_feedback.selectAll("div")
+					.data(files_by_date)
+					.enter()
+					.append("div")
+					.html(function(d,i){ return "<h2>"+(i+1)+" "+date_format(d.date) +"</h2>";})
+					.selectAll("div")
+						.data(function(d){return d.filename_word;})
+							.enter()
+							.append("div")
+							.html(function(d, i){ return "<h4>" +d.fname+"</h4>" +"<p>"+d.words+"</p>";});
+
+		/*svg_chart.selectAll("g")
+					.data(files_by_date)
+					.enter()
+					.append("g")
+					.attr("transform", function(d,i){return "translate("+250*i+",20)";})
+						.selectAll("text")
+						.data(function(d, i){return d.filename_word;})
+							.enter()
+							.append("text")
+							.attr("x", "0")
+							.attr("y", function(d, i){return 12*i;})
+							.text(function(d){return (d.fname +": " + d.words);});*/
+
+
+	});
+
+</script>
+</body>
+</html>

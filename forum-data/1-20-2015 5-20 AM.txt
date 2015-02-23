@@ -1,0 +1,17 @@
+No crash recovery file offeredcreated
+Hi,
+
+ 
+
+i was just working in CAM with an unsaved design (just copied over some components from another design) when Fusion suddenly crashed. After restart i wasn't offered a crash recovery file and the design of course wasn't saved.
+
+ 
+
+I guess this has not happened intentionally, right?
+
+ 
+
+Frank
+
+
+

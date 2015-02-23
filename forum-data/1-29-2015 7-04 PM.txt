@@ -1,0 +1,19 @@
+Upload Hung from General Fusion 360 Questions
+I have spent that past 30 minutes trying to open my design in Fusion with no luck.  That ratio works out pretty close to the norm as I had about 120 minutes to work tonight and I have spent about 25% of my planned time working on Fusion problems; par.  I simply do not understand why you guys are so opposed to creating a local copy of everything that is uploaded, automatically, every time. In circumstances like this one I would simply open the local copy, do the work I had planned to do and resolve the upload issue at a point in that that I could plan for NOT at the point in time the Fusion glitch forces me to deal with.  NUMEROUS users have requested this functionality.
+
+ 
+
+The problem - I launched Fusion to open my design and all I see is a busy wheel hovering of the design in my Data Panel list.  After 5-10 minutes I closed Fusion, reopened, no change.  Opened my project in A360 and the version I want to open (latest) is there. I created an .f3d archive file from the A360 copy.  I downloaded it to my local drive.  I want to open it but when I select it under Files in the Data Panel it takes me to A360 to view the file.  So, I am stuck... no pun intended.
+
+ 
+
+I tried deleting the JobManager 360 folder (as I read in one thread this was a possible solution), relaunched Fusion, same problem. The folder that I deleted was simply recreated by Fusion when I launched it. Two files in the folder, one is 0kB and the other is 1kB.
+
+ 
+
+Frustrating evening gentlemen.  Help would be appreciated.
+
+ 
+
+
+

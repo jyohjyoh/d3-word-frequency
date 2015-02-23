@@ -1,0 +1,5 @@
+Cloud Storage - Customer files and Itar Compl
+I am looking for confirmation that the storage method being used by Autodesk meets our customers file management needs and maintains Itar compliance. We as a company have been using Solidworks for at least 15+ years, but I think it is time to move onto something that is better suited for our modeling needs. Autodesk Fusion 360 may just be that tool. Can anyone help me with the details of how cloud file management is being operated?
+
+
+

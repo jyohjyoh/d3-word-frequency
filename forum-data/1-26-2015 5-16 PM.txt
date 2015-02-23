@@ -1,0 +1,8 @@
+Bug  - Fusion jumps from smooth into boxed mo
+I am not sure this is a bug, but Ive seen the behavior several times when editing a surface.
+
+This sceencast explains this better that I can in written words.
+
+
+
+via Sketching, Sculpting, Modeling, and Assemblies topics http://ift.tt/18mqaWj

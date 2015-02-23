@@ -1,0 +1,19 @@
+Unable to save from General Fusion 360 Questi
+I have an open file, that I have been working on the last 5 hours and I can not save it. I just see the wheel turning around in an eternity.
+
+I do not dare close the file and Fusion down in fear of losing my data. It is hard to recreate.
+
+ 
+
+I briefly saw  an error message when I tried to save the file, but it disappeared quickly so I did not read it.
+
+ 
+
+What can I do? Can I go offline and save the file and then at a later time go back online when the problem is solved?
+
+ 
+
+￼ 
+
+
+

@@ -1,0 +1,5 @@
+Cut from sketch and centering bodies
+Hello there, i have here an attached file of a sketch that i extruded into a body.  I have below it a flat body that i would like to press/pull the lettering i have into in a cut, thus removing the letters from the flat body rather than having extruded lettering  I also centered the lettering on the flat body the long way with move and measure, is there a feature such as that in vectrics vcarve where you can select bodies to align and center relative to other bodies? This would be a massive time saver.  Thanks again for all your great support and fantastic products! 
+
+
+

@@ -1,0 +1,13 @@
+Text Commands Tutorial from General Fusion 36
+Hello,
+
+ 
+
+I'm straddling AutoCAD and Fusion due to STEP and ipt file support, but I am used to the AutoCAD command line. Are there any tutorials for using the text command dialogue box? The command line was so fast to use compared to the mass of icons in Fusion. Do any of you use them?
+
+ 
+
+Thanks
+
+
+

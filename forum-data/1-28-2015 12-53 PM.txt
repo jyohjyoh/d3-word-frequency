@@ -1,0 +1,22 @@
+Auto Constraints
+Working with 2.0.1407
+
+ 
+
+When sketching a line to end on another line, no auto constrain appears (I'm looking for Perpendicular), so I end up having to make the line, and adding the constrain after the line is created.
+
+ 
+
+Unable to find a place to turn this on, if such a place exists.
+
+ 
+
+Thanks
+
+ 
+
+Mauricio
+
+
+
+via Sketching, Sculpting, Modeling, and Assemblies topics http://ift.tt/1tsGE8E

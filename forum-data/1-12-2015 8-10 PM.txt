@@ -1,0 +1,13 @@
+Fusion 360 Ultimate has slowed to a crawl
+I've spent most of the day watching the beachball spin.  Loading/saving takes an unusually long time (3-4 min to load). Any file.  A360 Dashboard is also unusually slow (click...wait...wait...wait...). Is it me or are there issues at Autodesk that are causing the slowdown?
+
+ 
+
+Thanks for any insight!
+
+ 
+
+-jamie
+
+
+

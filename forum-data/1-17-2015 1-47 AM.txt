@@ -1,0 +1,5 @@
+How can I recover a deleted design
+As far as I know, when you delete a design in Fusion you can't go back. I would like to know if there is something like a recycle bin where you can recover at least the last deleted files.
+
+
+

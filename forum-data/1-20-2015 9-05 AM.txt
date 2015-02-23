@@ -1,0 +1,39 @@
+2D Drawing questions
+How to modify?:
+
+section hatch type
+
+text type and height
+
+text type and height when a section is created
+
+individual text fonts
+
+change the title block
+
+change the title fonts
+
+swap 2d view from front-back-top-bottom-left-right-iso to another one
+
+unlink the 2d view from the parent for free positioning
+
+ 
+
+Issue:
+
+Ansi Title block editor: Date overlaps on frame with default text height
+
+ 
+
+Note:
+
+I see that in A360 I can analyze my 2d drawing, I can turn on-off layers.
+
+How can I do the same in Fusion?
+
+ 
+
+regards
+
+
+

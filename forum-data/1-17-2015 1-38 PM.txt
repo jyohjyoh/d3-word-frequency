@@ -1,0 +1,9 @@
+Fusion 360 crashes on my Macbook
+I am modeling a waffle iron in Fusion 360 on a MacBook Air running OS X 10.9.5. It crashshes sporatically when attempting various operations, but it consistently crashes whenever 1) I try to measure the distance between two bulges on the plate or 2) I try to save the model after having added a fillet along a straight edge.
+
+ 
+
+For #1, whever I navigate to Model => Inspect => Measure and then click on a bottom edge of one of the bulges, the beach ball spins indefintely until I finally have to force-quit the program. For #2, after I've saved and closed the version description dialog, the menus stop working and I can no longer manipulate the model.
+
+
+

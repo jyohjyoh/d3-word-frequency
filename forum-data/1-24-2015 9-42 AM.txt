@@ -1,0 +1,27 @@
+Update behavior - what to expect
+Win7 64b (dual monitor)  F360U Ver. 1403
+
+ 
+
+Yesterday when I started F360 Ult. a small dialog opened informing me that an update was occurring and the program would restart. The dialog disappeared and I waited a few minutes for the restart. Nothing happened - further, there was no indication of any activity in progress. I proceeded to open a design file, work on it, and then closed out half hour later.
+
+ 
+
+In the early afternoon, I clicked on the Fusion icon in the task bar, launched the program and logged in. When I went to open a design file, a dialog appeared informing me there is a problem with opening the file and the program just quit - closed completely. Clicked on the Fusion icon in the task bar to relaunch - it hilighted momentarily but program did not start. Tried one more time; same result. Restarted computer - no luck. Shut down/power up - same result, F360 will not launch.
+
+ 
+
+About the time I thought I was headed for a complete uninstall/reinstall, I noticed a Fusion Icon in the corner of my desktop. Double clicked on it - lo and behold, Fusion Ultimate starts up and is now version 1407! So, unpin the old icon from the task bar, pin the new one to it, and remove the shortcut from the desktop.
+
+ 
+
+Sorry for the long winded explanation, but I think it points up the need for some description of what to expect when major/minor upgrades do occur. I've 'learned' that promised restarts never seem to happen. With major updates you do get a progress bar so you know when the update is done, but I saw nothing with respect to the minor update on Friday. If there is such a description posted somewhere, my apologies and please point me to it. If not, would really like to know what to expect in these various situations. Thanks.
+
+ 
+
+Fred
+
+ 
+
+
+

@@ -1,0 +1,13 @@
+Design History
+Is there a way to turn design history off and then back on? or turn on design history half way through a model? There are features like moves that i dont care if they are in my design tree while i can use extrueds and radii in my tree.
+
+ 
+
+if this is not an option I would like to add the idea to have an on/off switch on the history
+
+ 
+
+thank you
+
+
+

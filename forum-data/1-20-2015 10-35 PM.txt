@@ -1,0 +1,5 @@
+greyed out tools in sketch that dont work
+I have fusion 360 ultimate in the sketch tool menu The circular pattern tool is greyed out and doesn't work it would be useful tool along with the mirror and rectangular pattern, and sketch dimension tool.  Are these some sort of options?
+
+
+

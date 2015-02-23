@@ -1,0 +1,19 @@
+unable to reinstall fusion 360
+I have been using Fusion 360 on two computers, a iMac, and a win7 laptop. 
+
+Today I was unable to run Fusion on the laptop in cloud mode - it would only run in local mode. 
+
+I made sure I was logged out on the iMac, and restarted the laptop several times.
+
+I saw a couple of comments suggesting reinstalling the application, so I tried that.
+
+I uninstalled, and then downloaded and ran the installer.
+
+The install stops part way through with an error message that instructs me to save the included file.
+
+ 
+
+How can I get Fusion 360 reinstalled?
+
+
+

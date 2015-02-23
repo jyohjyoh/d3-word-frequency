@@ -1,0 +1,13 @@
+Game driver
+Hello,
+
+ 
+
+I had some performance issues and have purchased a video card for Fusion 360. It's a PNY nVidia Geforce GT 730. As I installed the drivers it gave me the option of installing a "gaming" driver. I did so. As I watched, it uninstalled the first driver the CD installed. Should I remove this gaming driver and reload the first one? I'm trying to get better response with a detailed drawing. Moving the part around and such gets slow.
+
+ 
+
+Thanks!
+
+
+

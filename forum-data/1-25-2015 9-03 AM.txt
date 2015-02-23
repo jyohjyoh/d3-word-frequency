@@ -1,0 +1,22 @@
+Timeline  History bug
+Here my steps:
+
+ 
+
+
+Created some components from bodies and apply some features on that.
+
+If i activate a component, the history-timeline shows me only that features that i have applyed to that component.
+
+Now i moved the history marker some features to the left.
+
+I right clicked on right item next to the History Marker and selected "Delete all features after History Marker".
+
+After that, not only the right elements in the activated component are gone but also all features up to the history end are gone too.
+
+ 
+
+I think this is a bug?!
+
+
+

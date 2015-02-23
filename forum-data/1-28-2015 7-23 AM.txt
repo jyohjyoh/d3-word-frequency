@@ -1,0 +1,13 @@
+to open CGM file in fusion 360 sketcher
+hi,
+
+im using fusion 360 trail version, i would like to open the CGM file in the fusion, and need to use of the sketch to develop the entity. cuold you please send me a solution to open and edit the content in CGM file in Fusion 360.
+
+ 
+
+thanks & regards,
+
+Satish Kumar
+
+
+

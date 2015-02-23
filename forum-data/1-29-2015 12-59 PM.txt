@@ -1,0 +1,13 @@
+Help.. Rotate body   3D Part 1 from General F
+Hello,
+
+ 
+
+I'm playing with Cam on the 3D Part1 example.  I want to machine the top of this part. The way it's sitting, the part is machined from the front. How do I rotate this object about an axis so the machining is done from the top?
+
+ 
+
+Thanks!
+
+
+

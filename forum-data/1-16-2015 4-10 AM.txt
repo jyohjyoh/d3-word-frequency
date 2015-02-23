@@ -1,0 +1,21 @@
+Slow sketch function
+The sketch is so slow it's hard to work.
+
+No other software is running (Chrome excluded)
+
+Could this be a graphic problem?
+
+I think I really had enough CPU power
+
+Windows 7
+
+Intel Xeon @ 3.4 GHz 
+
+16 Gb memory.
+
+ 
+
+/Håkan
+
+
+

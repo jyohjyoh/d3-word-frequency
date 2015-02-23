@@ -1,0 +1,9 @@
+Why does the part move to it's drawn location
+Lets say I draw a part from model origin, because for some reason I cannot draw it in place correctly. I'd like to draw it and then move it into place. Now lets say I want to do something like edit the original sketch to have say a projected feature like holes in a flange. When I try to edit the moved/jointed object, it teleports back to the location where it was drawn.
+
+ 
+
+It seems like every time I run into an issue of workflow there is a good Fusioney method. What's the Fusioney method for doing this type of drawing? (Draw the shape, put it in place, then slurp features from existing objects like bolt holes)
+
+
+

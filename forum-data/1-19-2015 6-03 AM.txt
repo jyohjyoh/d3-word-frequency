@@ -1,0 +1,17 @@
+3D print a thread
+I like to 3D print a thread.
+
+In Solidworks I use a pattern (not the thread function) and then a spiral cut, but how do I make a "real" thread in Fusion 360?
+
+I realize that I can't use the "create - thread".
+
+ 
+
+/Håkan
+
+ 
+
+ 
+
+
+

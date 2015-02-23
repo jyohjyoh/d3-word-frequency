@@ -1,0 +1,5 @@
+Fusion 360 instalation issueproblem - acge220
+Hi  I'd like to ask for help or some advice with problem that occurs during installation of Fision 360 ( free student instalation).  The problem is when the installation process almost ends, then suddenly pop up a window with system error like:  Fusion 360.exe - system error  "Program cannot run becouse there is no acge220.dll file on computer.  Try to install program again to resolve this problem. "  I would be very appreciate If someone know what to do and could tell me how to solve this problem.  Best regards ￼    Rafael
+
+
+

@@ -1,0 +1,21 @@
+Hardware Advice to Fix Performance Issues fro
+I'm working on a fairly complex assembly (30 components, 100+ sketches, 25 construction planes) and Fusion has become extremely slow. If I do a basic command such creating a sketch or doing an extrude, Fusion spins for a minute before anything happens. It's like trying to write a document and having the word processor spin for a minute everytime you type a letter. 
+
+ 
+
+I have a MacBook Pro Mid 2012 with a 2.6 GHz Intel Core i7 processor, 8 GB of memory, and an Intel HD 1024 MB graphics processor.
+
+ 
+
+What hardware improvements would you recommend to have Fusion perform at a normal speed for complex assemblies? Is CPU, GPU, or memory more important?
+
+ 
+
+Also, what's the best hardware for running Fusion with complex assemblies Would you recommend an iMac or Mac Pro? Would Fusion be able to take advance of a Mac Pro's hardware? If so, which one would you recommend?
+
+ 
+
+ 
+
+
+

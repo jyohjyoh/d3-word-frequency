@@ -1,0 +1,214 @@
+FW when will this loft (belly problem) bug be
+
+
+From: <cekuhnen>
+Date: Monday, January 12, 2015 at 3:18 AM
+Subject: when will this loft (belly problem) bug be fixed?
+
+
+as you can see the loft with curvature creates an interesting belly effect which however should not be there.
+this makes it impossible to work with loft and G1/G2 the same way I can in Alias or Rhino.
+ 
+￼
+ View article...
+
+Autodesk Fusion 360
+	•	 Features
+	•	 Customers
+	•	 Community
+	•	 Blog
+	•	 Gallery
+	•	 Learning
+	•	 Sign In
+	•	 Try or Buy
+	•	Autodesk Community
+	•	>
+	•	Fusion 360
+	•	>
+	•	Sketching, Sculpting, Modeling, and Assemblies
+	•	>
+	•	when will this loft (belly problem) bug be fixed?
+
+Sketching, Sculpting, Modeling, and Assemblies
+
+
+
+
+Reply
+Topic Options
+	•	Subscribe to RSS Feed
+	•	
+	•	Mark Topic as New
+	•	Mark Topic as Read
+	•	
+	•	Float this Topic to the Top
+	•	Bookmark
+	•	Subscribe
+	•	
+	•	Printer Friendly Page
+	•	« Message Listing
+	•	« Previous Topic
+	•	Next Topic »
+
+
+
+
+￼ cekuhnen
+*Expert Elite*
+
+￼
+1,459 Posts
+705 Kudos
+Registered: ‎07-26-2012
+
+when will this loft (belly problem) bug be fixed?
+Options
+	•	Mark as New
+	•	Bookmark
+	•	Subscribe
+	•	
+	•	Subscribe to RSS Feed
+	•	
+	•	Highlight
+	•	Print
+	•	Email to a Friend
+	•	
+	•	Report Inappropriate Content
+37 Views, 2 Replies
+13 hours ago
+as you can see the loft with curvature creates an interesting belly effect which however should not be there.
+this makes it impossible to work with loft and G1/G2 the same way I can in Alias or Rhino.
+ 
+￼
+￼
+
+Report Inappropriate Content
+Post 1 of 3
+
+
+Reply
+0 Kudos
+
+
+
+
+
+
+Please use plain text.
+ 
+
+
+
+
+
+
+￼ innovatenate
+Product Support
+
+￼
+1,175 Posts
+253 Kudos
+Registered: ‎11-22-2011
+
+Re: when will this loft (belly problem) bug be fixed?
+Options
+	•	Mark as New
+	•	Bookmark
+	•	Subscribe
+	•	
+	•	Subscribe to RSS Feed
+	•	
+	•	Highlight
+	•	Print
+	•	Email to a Friend
+	•	
+	•	Report Inappropriate Content
+6 hours ago in reply to: cekuhnen
+I just checked the report, and I have bad news. Right now, it doesn't appear that this will make it into the January release. I have sent an inquiry to see if we can increase the priority on this issue. I will circle back with an update, good or bad.
+ 
+Thanks,
+ 
+ 
+￼
+
+Nathan Chandler
+
+
+Report Inappropriate Content
+Post 2 of 3
+
+
+Reply
+0 Kudos
+
+
+
+
+
+
+Please use plain text.
+ 
+
+
+
+
+
+
+￼ cekuhnen
+*Expert Elite*
+
+￼
+1,459 Posts
+705 Kudos
+Registered: ‎07-26-2012
+
+Re: when will this loft (belly problem) bug be fixed?
+Options
+	•	Mark as New
+	•	Bookmark
+	•	Subscribe
+	•	
+	•	Subscribe to RSS Feed
+	•	
+	•	Highlight
+	•	Print
+	•	Email to a Friend
+	•	
+	•	Report Inappropriate Content
+6 hours ago in reply to: innovatenate
+Thanks for the feedback - this is a serious limitation of the tool right now and and in my case can easily be a show stopper when one would need this modeling approach. The edge rounding (fillet) with G2 does not provide you with the ability to weight each side so one has to use loft with G2/smooth in Fusion.
+￼
+Report Inappropriate Content
+Post 3 of 3
+
+
+Reply
+0 Kudos
+
+
+
+
+
+
+Please use plain text.
+ 
+
+
+
+
+
+	•	« Message Listing
+	•	« Previous Topic
+	•	Next Topic »
+
+
+￼
+
+
+	•	
+	•	
+	•	
+	•	
+Autodesk.
+© Copyright 2014 Autodesk Inc. All rights reserved | Legal Notices & Trademarks | Privacy
+

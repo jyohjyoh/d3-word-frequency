@@ -1,0 +1,18 @@
+SERIOUS tspline bug - if you delete and undo 
+So I ran into this bug, and the most distressing thing is it seems to persist across all subsequent versions of a file.
+
+ 
+
+If you open Edit Form, select an edge, delete it, hit Undo, and then try to select it again, you cannot!
+
+ 
+
+http://ift.tt/1yYSF6A
+
+ 
+
+ 
+
+
+
+via Sketching, Sculpting, Modeling, and Assemblies topics http://ift.tt/1yYSGaB

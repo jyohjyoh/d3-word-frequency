@@ -1,0 +1,29 @@
+DOWNLOAD FILES AFTER FUSON360 TRIAL EXPIRED
+After the trial of fusion360 was expired I tried to download some designs but there is no way to do it.
+
+ 
+
+Autodesk says:
+
+ 
+
+"
+
+2. If my trial expires, will I still have access to all of my pre-existing Fusion 360 data?
+
+Yes. There are two ways to access your data. The first is to login to Fusion 360 and you will see your work on your dashboard. The second is through Autodesk 360 Professional. a free service that lets you access your work through most web browsers. Through either, you can collaborate, share, download and archive your work. However, you will not be able to design or model unless you have a current Fusion 360 license."
+
+ 
+
+I can see the designs in the dashboard but I can't open any one or export to computer as usual. Then I tried to login into the autodesk account with web browser but despite I can open files as renderings I can0t download anything neither.
+
+ 
+
+Could you tell me how to download filoes to the computer?
+
+ 
+
+Thanks.
+
+
+

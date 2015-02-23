@@ -1,0 +1,27 @@
+Viewport enhancement Multiple Views
+Build 2.0.1403
+
+ 
+
+I've just updated to this build and I am taking the new features for a spin.
+
+ 
+
+Thank you for the new Multiple Views feature! Not logged enough time yet to check for any issues (at this time).
+
+ 
+
+It is particularly useful for the type of work I want to do with Fusion. I have been evaluating application on design of large structures such as bridges.
+
+Very large radius curves (i.e. camber) are a requirement of bridge structures. With one viewport, navigating & sketching was frustrating / laborious  / suseptible to human errors.
+
+ 
+
+With multiple views (interacting); Easier tracking and continuity of critical points of the sketch should be now possible - so many thanks again!
+
+ 
+
+￼ 
+
+
+

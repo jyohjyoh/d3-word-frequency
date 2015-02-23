@@ -1,0 +1,9 @@
+my design won't load
+Open downloaded A360 document error, downloaded file is /Users/[my name]/Library/Application Support/Autodesk/Autodesk Fusion 360/346PLSXEPT6T/PLM360Cache/ http://ift.tt/1C2Z15O edition v12.7e5d672a-14f9-469f-9493-eab2512f5c40.f3d, error message is The path /Users/[my name]/Library/Application Support/Autodesk/Autodesk Fusion 360/346PLSXEPT6T/PLM360Cache/ http://ift.tt/1C2Z15O edition v12.7e5d672a-14f9-469f-9493-eab2512f5c40.f3d is not a valid zip package.
+
+ 
+
+Any suggestions?
+
+
+

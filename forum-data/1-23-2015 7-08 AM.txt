@@ -1,0 +1,5 @@
+Show All Componentes
+Hi, when hide a (or many) part from an assembly is very dificult to show them all again, even if I rightclick and choose show all in the browser. How to really show all the bodies from an assembly?
+
+
+

@@ -1,0 +1,22 @@
+Dimension the distance to the edge of a circl
+Attached is an image to show what I currently have. I'd like to have the circle go into rectangle exactly 2.25mm inches.
+
+ 
+
+￼ 
+
+ 
+
+In Inventor, I would select the top rectangle line, then select the bottom-most point of the circle and I could set the distance. In Fusion, I'm not able to do that. I'm only able to dimension to the center point.
+
+ 
+
+￼ 
+
+ 
+
+The workaround, for now, is to dimension between the centerpoint and the rectangle with a function (= diameter/2 - 2.25). Is there a better way?
+
+
+
+via Sketching, Sculpting, Modeling, and Assemblies topics http://ift.tt/1tqGyhM

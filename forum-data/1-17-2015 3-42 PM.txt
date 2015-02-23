@@ -1,0 +1,17 @@
+Set current view as top
+After doing a couple "Change current view to top", the red,green and blue axis lines all turn black.  This did not happen before the last update.  I have to restart fusion to get the colors back.
+
+ 
+
+Using a 3Dmouse, and switching from multi view back to single view, the 3Dmouse looses focus and will not work.
+
+ 
+
+Why does the X axis always revert to the wrong orientation when clicking the "top" button?  it is 90 degrees off.  Every other program I have ever used shows the X axis as a horizontal line when doing a top view.  This also matches most VMC's  I know it can be rotated manually, but with multi views it gets confusing.
+
+ 
+
+Todd 
+
+
+

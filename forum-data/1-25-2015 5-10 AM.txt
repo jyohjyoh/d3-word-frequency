@@ -1,0 +1,9 @@
+Sketch order of operation this to that doesn'
+I was under the impression that Fusion's sketch constraints should be applied in a "this to that" order, so you can direct which geometry moves to meet the constraint. Problem is, in some scenarios, it seems that the sketch engine just considers one you want to move fixed and will bring the "that" geometry in.
+
+ 
+
+Does the sketch engine strictly use "this to that" or am I projecting past CAD methods on Fusion again? ￼ 
+
+
+

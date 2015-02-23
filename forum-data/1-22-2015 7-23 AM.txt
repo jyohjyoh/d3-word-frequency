@@ -1,0 +1,11 @@
+Extrude to Sketch Geometry, 2 Side
+Working through the youtube video 04_Model Part1 ( http://ift.tt/1uycce1), When I complete the initial extrusion
+
+(in video 1:30 to 2 min range), I get a preview of the side 2 extrusion, but when I click OK in the Extrude dialog box, only the positive Z side remains. This happens regardless of the order of selection.
+
+Using build 2.0.1403
+
+Please advise if this is a change in workflow or software issue.
+
+
+

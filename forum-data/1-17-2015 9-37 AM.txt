@@ -1,0 +1,21 @@
+Graphics Card new requirements
+I get a message at the top of my screen that says,
+
+ 
+
+Your graphics card might not be optimal to run Fusion 360. Please run Graphics Diagnostic under the help menu to get more information.
+
+ 
+
+It wants me to set rendering limits.
+
+I would rather upgrade my computer than limit it.
+
+Do you have new requirements for this update?
+
+ 
+
+ 
+
+
+
