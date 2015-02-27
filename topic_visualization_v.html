@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forum Feedbak Pattern</title>
+
+<style>
+	body {
+		font-family: Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	.container{
+		width: 1100px;
+		margin: 0 auto;
+	}
+
+	.words-list{
+		background-color: #eee;
+	}
+
+	.chart{
+		background-color: #ddd;
+
+	}
+
+	.axis text {
+		font: 8px;
+		fill: #666;
+	}
+	.axis path {
+		display: none;
+	}
+
+	.y.axis line {
+		fill: none;
+		stroke: #eaeaea;
+		shape-rendering: crispEdges;
+	}
+
+	.y.axis path line{
+		stroke: grey;
+		stroke-width: 1;
+		shape-rendering: crispEdges;
+	}
+
+	.feedback-list{
+		width: 1000px;
+		margin-top: 20px;
+	}
+
+	.tooltip{
+		/*position: absolute;*/
+		background: #fff;
+		width: 500px;
+	}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<svg class="words-list" height="800" width="120"></svg>
+
+<svg class="chart" height="800" width="900">
+	<foreignObject class="tooltip-container">
+		<body xmlns="http://www.w3.org/1999/xhtml">
+		<div class="tooltip"></div>
+		</body>
+	</foreignObject>
+</svg>
+
+<div class="feedback-list" width="1100"></div>
+
+</div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script>
+	var margin = {top: 20, right: 30, bottom: 100, left: 30 },
+	    width = 900 - margin.left - margin.right,
+	    height = 800 - margin.top - margin.bottom;
+
+	var svg_words_list = d3.select(".words-list");
+	var svg_chart = d3.select(".chart");
+	var selected_words = new Array();
+	var word_count = new Array();
+	var files_by_date = new Array();
+	
+	var parseDate = d3.time.format("%m/%d/%y").parse;
+	var y = d3.time.scale().range([height, margin.top]);
+	var yAxis = d3.svg.axis().scale(y).orient("left").tickFormat(d3.time.format("%b %d"));
+
+	// add the tooltip area to the webpage
+	var tooltip_container = d3.select(".tooltip-container");
+	var tooltip = d3.select(".tooltip")
+    				.style("opacity", 0);
+
+    var div_feedback = d3.select(".feedback-list");
+
+    function make_class_name(string1){
+    	return "a"+ string1.replace(/[\. ,:-]+/g, "");
+    }
+
+    function count_string(string1, sub){
+    	var count = 0    	
+    	var idx = string1.length, start = 0;
+    	while(idx >=0 && start<string1.length){
+    		idx = string1.indexOf(sub, start);
+    		if( idx >= 0 ){
+    			count ++;
+    			start = idx + sub.length;
+    		}
+    	}
+    	return count;
+    }
+
+    function update_fname_selection(files_by_date, selected_words)
+    {
+    	files_by_date.forEach(function(d){
+    		d.filename_word.forEach(function(fname_word){
+    			var the_dot = d3.select("."+make_class_name(fname_word.fname)+"-dot");
+    			var count = 0;
+    			selected_words.forEach(function(word){
+    				if(fname_word.words.indexOf(word)>=0) count++;
+    			});
+
+    			if( count == 0){
+    				the_dot.style("stroke", "rgb(0, 0, 0)")
+    						.style("stroke-width", "0.1");
+    			}
+    			else{
+    				the_dot.style("stroke", "rgb(220, 190, 0)")
+    						.style("stroke-width", count*2);
+    			}
+       		});
+    	});
+    }
+
+    function update_files_section(files_by_date, selected_words)
+    {
+    	var div_feedback = d3.select(".feedback-list");
+    	div_feedback.selectAll("div").remove();
+
+   		//list documents that contains the word
+		files_by_date.forEach(function(d){
+			d.filename_word.forEach(function(e){
+				var matches = new Array();
+				selected_words.forEach(function(word){
+					if( e.words.indexOf(word)>-1) matches.push(word);
+				});
+
+				if( matches.length > 0 ){
+					var file_div = div_feedback.append("div");
+					file_div.append("h2").html(e.fname);
+					$.get("./forum-data/"+e.fname, function(buffer){
+						for( var j=0; j<matches.length; j++ )
+							buffer = buffer.split(matches[j])
+											.join("<span style='background-color:yellow'>"+matches[j]+"</span>");
+							file_div.append("p").html(buffer+"</br>");
+					}); //buffer
+				} //if
+			}); //e
+		}); //d
+	}
+
+	d3.csv("word-frequency.csv", function(error, data){
+		data.forEach(function(d){
+			d.number = +d.number;
+			word_count.push({word:d.word, count:d.number});
+		});
+
+		word_count.sort(function(a,b){ return b.count - a.count});
+		files_by_date.sort(function(a,b){ return b.date - a.date});
+		selected_words.push(word_count[0].word);
+		selected_words.push(word_count[3].word);
+
+		var h0 = 40, h1=40;
+		svg_words_list.selectAll("text")
+					.data(word_count)
+					.enter()
+					.append("text")
+					.attr("class", function(d){return d.word+"-text";})
+					.attr("x", 20)
+					.attr("y", function(d){h0=h1; h1+=d.count+4; return h0;})
+					.attr("font-size", function(d){return d.count-3;})
+					.style("fill", function(d){
+						for( var j=0; j<selected_words.length; j++){
+							if( d.word == selected_words[j]) return "rgb(0, 80, 200)";
+						}
+						return "rgb(0, 0, 0)";
+					})
+					.text(function(d){ return (d.word); })
+					.on("click", function(d){
+						var found = 0;
+						for( var j=0; found==0 && j<selected_words.length; j++){
+							if( d.word == selected_words[j]){
+								selected_words.splice(j, 1);
+								found = 1;
+								d3.select("."+d.word+"-text").style("fill", "rgb(0, 0, 0)");
+							}
+						}
+						if(found==0){
+							selected_words.push(d.word);
+							d3.select("."+d.word+"-text").style("fill", "rgb(0, 80, 200)");
+						}
+
+						update_fname_selection(files_by_date, selected_words);
+						update_files_section(files_by_date, selected_words);
+					});
+	});
+
+	d3.csv("word-file-count2-formatted.csv", function(error, data) {	
+		var dates = new Array();
+		var dot_color = d3.scale.linear().domain([0, 1]).range(["#abdae7", "#2072bd"]);
+
+		data.forEach(function(d){
+			d.date = parseDate(d.date);
+			d.filecount = +d.filecount;
+		});
+
+		data.forEach( function(d){
+			//build word_count array
+			var index = -1;
+			for( var i=0; index<0 && i<files_by_date.length; i++){
+				if(files_by_date[i].date.getTime() == d.date.getTime()){
+					index = i;
+				}
+			}
+			if( index == -1){
+				var fname_word = new Array();
+				fname_word.push({fname:d.filename1, words:[d.word]});
+				for( var i=1; i<d.filecount; i++){
+					if(i==1) fname_word.push({fname:d.filename2, words:d.word});
+					if(i==2) fname_word.push({fname:d.filename3, words:d.word});
+					if(i==3) fname_word.push({fname:d.filename4, words:d.word});
+					if(i==4) fname_word.push({fname:d.filename5, words:d.word});
+				}
+				files_by_date.push({date:d.date, filename_word:fname_word });
+			}
+			else{
+				var fname_word = files_by_date[index].filename_word;
+				var pushed = 0;
+				
+				for(var i=0; i<d.filecount; i++ ){
+					pushed = 0;
+					for( var j=0; j<fname_word.length; j++){
+						if( i==0){
+							if( fname_word[j].fname == d.filename1 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==1){
+							if( fname_word[j].fname == d.filename2 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==2){
+							if( fname_word[j].fname == d.filename3 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==3){
+							if( fname_word[j].fname == d.filename4 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+						if( i==4){
+							if( fname_word[j].fname == d.filename5 ){
+								fname_word[j].words += ", " + d.word;
+								pushed = 1;
+							}
+						}
+					}
+
+					if(pushed == 0){
+						if( i==0) files_by_date[index].filename_word.push({fname:d.filename1, words:d.word});
+						if( i==1) files_by_date[index].filename_word.push({fname:d.filename2, words:d.word});
+						if( i==2) files_by_date[index].filename_word.push({fname:d.filename3, words:d.word});
+						if( i==3) files_by_date[index].filename_word.push({fname:d.filename4, words:d.word});
+						if( i==4) files_by_date[index].filename_word.push({fname:d.filename5, words:d.word});
+					}
+				}
+			}
+
+
+		});
+
+		files_by_date.sort(function(a,b){ return a.date - b.date});
+		
+		var h0 = 40, h1=40;
+		var w0 = 0;
+
+		//append y-axis
+		yAxis.ticks(files_by_date.length);
+		y.domain(d3.extent(files_by_date, function(d){return d.date;}));
+
+		svg_chart.append("g")
+				.attr("class", "y axis")
+				.attr("transform", "translate( 80, 0)")//, "+height+")")
+				.call(yAxis)
+				.selectAll("text");/*
+					.style("text-anchor", "end")
+					.attr("dy", "0.5em")
+					.attr("transform", "rotate(-30)");*/
+		
+		//var date_format = d3.time.format("%m-%d-%y");
+		//var acc=1;
+		svg_chart.append("g")
+					.selectAll("g")
+					.data(files_by_date)
+					.enter()
+					.append("g")
+					.attr("transform", function(d){ return "translate(0,"+y(d.date)+")"})
+						.selectAll("circle")
+						.data(function(d, i){return d.filename_word;})
+							.enter()
+							.append("circle")
+							.attr("class", function(d){return make_class_name(d.fname)+"-dot";})
+							.attr("r", 5)
+							.attr("cy", 0)
+							.attr("cx", function(d, i){return 80+15*i+20;})
+							.style("fill", function(d){ return dot_color((count_string(d.words, ",")+1)/5);})
+							.style("stroke", function(d, i){
+									for( var j=0; j<selected_words.length; j++){
+										if( d.words.indexOf(selected_words[j])>-1 ) return "rgb(220, 190, 0)";
+									}
+									return "rgb(255, 255, 255)";
+								})
+							.style("stroke-width", function(d, i){
+									var cnt = 0;
+									for( var j=0; j<selected_words.length; j++){
+										if( d.words.indexOf(selected_words[j])>-1 )cnt++;
+									}
+									return cnt*2;
+								})
+							.on("mouseover", function(d){
+								tooltip.transition()
+									.duration(200)
+									.style("opacity", .9);
+
+								tooltip_container.attr("x", "300px")
+										.attr("y", (d3.event.pageY-10)+"px");
+								tooltip.html(d.fname + "<br/> (" + d.words + ")<br/>");
+										
+								tooltip.selectAll(".file_contents").remove();
+								var file_div = tooltip.append("div")
+														.attr("class", "file_contents");
+								$.get("./forum-data/"+d.fname, function(buffer){
+									file_div.append("p").html(buffer);
+								});
+							});/*
+							.on("mouseout", function(d) {
+								tooltip.transition()
+									.duration(500)
+									.style("opacity", 0);
+							});*/
+
+		//list documents that contains the word
+		files_by_date.forEach(function(d){
+			d.filename_word.forEach(function(e){
+				var matches = new Array();
+				for( var j=0; j<selected_words.length; j++ ){
+					if( e.words.indexOf(selected_words[j]) >-1 ){
+						matches.push(selected_words[j]);
+					}
+				}
+				if( matches.length > 0 ){
+					var file_div = div_feedback.append("div");
+					file_div.append("h2").html(e.fname);
+					$.get("./forum-data/"+e.fname, function(buffer){
+						for( var j=0; j<matches.length; j++ )
+							buffer = buffer.split(matches[j])
+											.join("<span style='background-color:yellow'>"+matches[j]+"</span>");
+							file_div.append("p").html(buffer+"</br>");
+					}); //buffer
+				} //if
+			}); //e
+		}); //d
+
+	});
+
+</script>
+</body>
+</html>
