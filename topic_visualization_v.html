@@ -333,11 +333,11 @@
 									for( var j=0; j<selected_words.length; j++){
 										if( d.words.indexOf(selected_words[j])>-1 )cnt++;
 									}
-									return dot_color((cnt+1)/5);}) //(count_string(d.words, ",")+1)/5);})
+									return dot_color((cnt+1)/2);}) //(count_string(d.words, ",")+1)/5);})
 							.style("stroke", function(d, i){
-									for( var j=0; j<selected_words.length; j++){
+									/*for( var j=0; j<selected_words.length; j++){
 										if( d.words.indexOf(selected_words[j])>-1 ) return "rgb(220, 190, 0)";
-									}
+									}*/
 									return "rgb(255, 255, 255)";
 								})
 							.style("stroke-width", function(d, i){
