@@ -100,6 +100,8 @@
     				.style("opacity", 0);
 
     var div_feedback = d3.select(".feedback-list");
+    var dot_color = d3.scale.linear().domain([0, 1]).range(["#abdae7", "#2072bd"]);
+
 
     function make_class_name(string1){
     	return "a"+ string1.replace(/[\. ,:-]+/g, "");
@@ -176,7 +178,7 @@
 		selected_words.push(word_count[0].word);
 		selected_words.push(word_count[3].word);
 
-		var h0 = 40, h1=40;
+		var h0 = 30, h1=40;
 		svg_words_list.selectAll("text")
 					.data(word_count)
 					.enter()
@@ -213,7 +215,6 @@
 
 	d3.csv("word-file-count2-formatted.csv", function(error, data) {	
 		var dates = new Array();
-		var dot_color = d3.scale.linear().domain([0, 1]).range(["#abdae7", "#2072bd"]);
 
 		data.forEach(function(d){
 			d.date = parseDate(d.date);
