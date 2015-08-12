@@ -322,11 +322,12 @@
 						.selectAll("circle")
 						.data(function(d, i){return d.filename_word;})
 							.enter()
-							.append("circle")
+							.append("rect")
 							.attr("class", function(d){return make_class_name(d.fname)+"-dot";})
-							.attr("r", 5)
-							.attr("cy", 0)
-							.attr("cx", function(d, i){return 80+15*i+20;})
+							.attr("width", 10)
+							.attr("height", 10)
+							.attr("y", 0)
+							.attr("x", function(d, i){return 80+15*i+20;})
 							.style("fill", function(d){ return dot_color((count_string(d.words, ",")+1)/5);})
 							.style("stroke", function(d, i){
 									for( var j=0; j<selected_words.length; j++){
