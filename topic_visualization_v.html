@@ -305,13 +305,8 @@
 				.attr("class", "y axis")
 				.attr("transform", "translate( 80, 20)")//, "+height+")")
 				.call(yAxis)
-				.selectAll("text");/*
-					.style("text-anchor", "end")
-					.attr("dy", "0.5em")
-					.attr("transform", "rotate(-30)");*/
-		
-		//var date_format = d3.time.format("%m-%d-%y");
-		//var acc=1;
+				.selectAll("text");
+
 		svg_chart.append("g")
 					.selectAll("g")
 					.data(files_by_date)
@@ -325,28 +320,14 @@
 							.attr("class", function(d){return make_class_name(d.fname)+"-dot";})
 							.attr("width", 11)
 							.attr("height", 11)
-							.attr("y", 0)
+							.attr("y", -20)
 							.attr("x", function(d, i){return 80+15*i+20;})
 							.style("fill", function(d){ 
 									var cnt = 0;
 									for( var j=0; j<selected_words.length; j++){
 										if( d.words.indexOf(selected_words[j])>-1 )cnt++;
 									}
-									return dot_color((cnt+1)/2);}) //(count_string(d.words, ",")+1)/5);})
-							.style("stroke", function(d, i){
-									/*for( var j=0; j<selected_words.length; j++){
-										if( d.words.indexOf(selected_words[j])>-1 ) return "rgb(220, 190, 0)";
-									}*/
-									return "rgb(255, 255, 255)";
-								})
-							.style("stroke-width", function(d, i){
-									/*var cnt = 0;
-									for( var j=0; j<selected_words.length; j++){
-										if( d.words.indexOf(selected_words[j])>-1 )cnt++;
-									}
-									return cnt*2;*/
-									return 0;
-								})
+									return dot_color((cnt+1)/2);})
 							.on("mouseover", function(d){
 								tooltip.transition()
 									.duration(200)
@@ -362,12 +343,7 @@
 								$.get("./forum-data/"+d.fname, function(buffer){
 									file_div.append("p").html(buffer);
 								});
-							});/*
-							.on("mouseout", function(d) {
-								tooltip.transition()
-									.duration(500)
-									.style("opacity", 0);
-							});*/
+							});
 
 		//list documents that contains the word
 		files_by_date.forEach(function(d){
