@@ -328,7 +328,12 @@
 							.attr("height", 10)
 							.attr("y", 0)
 							.attr("x", function(d, i){return 80+15*i+20;})
-							.style("fill", function(d){ return dot_color(0.5);}) //(count_string(d.words, ",")+1)/5);})
+							.style("fill", function(d){ 
+									var cnt = 0;
+									for( var j=0; j<selected_words.length; j++){
+										if( d.words.indexOf(selected_words[j])>-1 )cnt++;
+									}
+									return dot_color((cnt+1)/5);}) //(count_string(d.words, ",")+1)/5);})
 							.style("stroke", function(d, i){
 									for( var j=0; j<selected_words.length; j++){
 										if( d.words.indexOf(selected_words[j])>-1 ) return "rgb(220, 190, 0)";
@@ -336,11 +341,12 @@
 									return "rgb(255, 255, 255)";
 								})
 							.style("stroke-width", function(d, i){
-									var cnt = 0;
+									/*var cnt = 0;
 									for( var j=0; j<selected_words.length; j++){
 										if( d.words.indexOf(selected_words[j])>-1 )cnt++;
 									}
-									return cnt*2;
+									return cnt*2;*/
+									return 1;
 								})
 							.on("mouseover", function(d){
 								tooltip.transition()
